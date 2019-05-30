@@ -1,0 +1,27 @@
+---------------------------------------------------------------
+[ 2019-04-05T15:54:45+08:00 ] 116.20.115.87 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T15:55:34+08:00 ] 116.20.115.87 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T15:58:36+08:00 ] 116.20.115.87 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T15:58:43+08:00 ] 116.20.115.87 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T20:22:03+08:00 ] 113.70.103.32 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T21:37:13+08:00 ] 113.70.103.32 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T22:09:21+08:00 ] 113.70.103.32 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T22:09:26+08:00 ] 113.70.103.32 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-04-05T22:37:53+08:00 ] 113.70.103.32 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]

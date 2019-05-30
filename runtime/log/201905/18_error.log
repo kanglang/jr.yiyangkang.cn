@@ -1,0 +1,61 @@
+---------------------------------------------------------------
+[ 2019-05-18T14:39:42+08:00 ] 112.47.223.209 GET /admin/config/index
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+---------------------------------------------------------------
+[ 2019-05-18T14:40:08+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:40:23+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:40:33+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:41:28+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:41:38+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:41:51+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:42:06+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:42:18+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:42:29+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:42:46+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:42:56+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:13+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:18+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:40+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:41+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:42+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:43+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-18T14:43:52+08:00 ] 112.47.223.209 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]

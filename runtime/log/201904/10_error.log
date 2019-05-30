@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2019-04-10T15:33:17+08:00 ] 113.108.141.170 POST /api/login/login
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-04-10T15:34:16+08:00 ] 112.94.224.188 POST /api/login/login
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]

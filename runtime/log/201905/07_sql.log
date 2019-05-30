@@ -1,0 +1,879 @@
+---------------------------------------------------------------
+[ 2019-05-07T20:41:40+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002557s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:40+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000353s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002226s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001734s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:41+08:00 ] 14.24.64.47 POST /api/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002521s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000240s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `mobile` = '13800000000'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:41+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000278s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001655s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:41+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000477s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002527s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:41+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002384s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001842s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:41+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001795s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001503s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000221s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:41'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:41'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:41+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002849s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001524s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001555s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:41'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:41'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:46+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002295s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001658s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:46'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:46'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:51+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002286s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001603s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:51'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:51'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:53+08:00 ] 14.24.64.47 POST /api/business/is_yuyue
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002211s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:53+08:00 ] 14.24.64.47 POST /api/Game/yuyue
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000327s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002193s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001613s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_reservation` [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_pig_reservation` WHERE  `reservation_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `pig_id` = 21 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001542s ]
+[ sql ] [ SQL ] SELECT `reservation` FROM `zp_pig_goods` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT `user_money`,`usermoneysalt` FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] UPDATE `zp_users`  SET `user_money`=user_money+0,`pay_points`=pay_points+-50,`distribut_money`=distribut_money+0,`usermoneysalt`='NE5Gy979r9cijhZZ4np5NA=='  WHERE  `user_id` = 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001506s ]
+[ sql ] [ SQL ] INSERT INTO `zp_account_log` (`user_id` , `user_money` , `pay_points` , `change_time` , `desc` , `order_id` , `order_sn` , `type` , `pig_id`) VALUES (1 , 0 , -50 , 1557232913 , '预约消费福分' , 0 , '0' , 4 , 21) [ RunTime:0.002485s ]
+[ sql ] [ SQL ] INSERT INTO `zp_pig_reservation` (`reservation_time` , `pig_id` , `user_id` , `pay_points`) VALUES (1557232913 , 21 , 1 , 50) [ RunTime:0.000241s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:53+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000346s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002186s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001600s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:56+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002214s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001658s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000246s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001536s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:56'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:11:56'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:41:58+08:00 ] 14.24.64.47 POST /api/User/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002237s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.014671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user_payment` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001690s ]
+[ sql ] [ SQL ] SELECT SUM(price) AS tp_sum FROM `zp_user_exclusive_pig` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_doge_money` [ RunTime:0.001685s ]
+[ sql ] [ SQL ] SELECT SUM(contract_revenue) AS tp_sum FROM `zp_pig_doge_money` WHERE  `user_id` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SELECT SUM(user_money) AS tp_sum FROM `zp_account_log` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_level` [ RunTime:0.001582s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `zp_user_level` WHERE  `level_id` = 2 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` INNER JOIN `zp_users` `c` ON `a`.`purchase_user_id`=`c`.`user_id` WHERE  `sell_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:00+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000338s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002284s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:00+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001904s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001546s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:01+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002590s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000235s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:01+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001591s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001719s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:01'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:01'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:01+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002721s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001826s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000245s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001818s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:01'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:01'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:01+08:00 ] 14.24.64.47 POST /api/User/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000342s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user_payment` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT SUM(price) AS tp_sum FROM `zp_user_exclusive_pig` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_doge_money` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT SUM(contract_revenue) AS tp_sum FROM `zp_pig_doge_money` WHERE  `user_id` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001419s ]
+[ sql ] [ SQL ] SELECT SUM(user_money) AS tp_sum FROM `zp_account_log` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_level` [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `zp_user_level` WHERE  `level_id` = 2 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` INNER JOIN `zp_users` `c` ON `a`.`purchase_user_id`=`c`.`user_id` WHERE  `sell_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:02+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002488s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:02+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002003s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:02+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002382s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000250s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001926s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:02+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002084s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001500s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001511s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:02'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:02'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:02+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002875s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001955s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000270s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001737s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:02'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:02'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:06+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000357s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002524s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:06+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001813s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001581s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000405s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:06+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002653s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:06+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000753s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001634s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000240s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001499s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:06'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:06'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:06+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002288s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002604s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001825s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001818s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:06'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:06'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:10+08:00 ] 14.24.64.47 POST /api/User/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002197s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user_payment` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001451s ]
+[ sql ] [ SQL ] SELECT SUM(price) AS tp_sum FROM `zp_user_exclusive_pig` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_doge_money` [ RunTime:0.001424s ]
+[ sql ] [ SQL ] SELECT SUM(contract_revenue) AS tp_sum FROM `zp_pig_doge_money` WHERE  `user_id` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001438s ]
+[ sql ] [ SQL ] SELECT SUM(user_money) AS tp_sum FROM `zp_account_log` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_level` [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `zp_user_level` WHERE  `level_id` = 2 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` INNER JOIN `zp_users` `c` ON `a`.`purchase_user_id`=`c`.`user_id` WHERE  `sell_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:11+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002426s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:11+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001936s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001542s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:11+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002473s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001850s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:11+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001853s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001522s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:11'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:11'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:11+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002693s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001843s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000250s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001867s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:11'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:11'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:16+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002220s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001662s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:16'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:16'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:21+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002260s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001634s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001543s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:21'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:21'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:26+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002289s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001631s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000247s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001548s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:26'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:26'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:31+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002351s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001591s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001550s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:31'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:31'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:42:36+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002285s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001578s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:36'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:12:36'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:29+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002320s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001584s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000254s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:29'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:29'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:35+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002304s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001623s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001535s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:35'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:35'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:37+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001892s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:37+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002565s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:37+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002507s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.002033s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:37+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001732s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001510s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001498s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:37'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:37'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:37+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002232s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001678s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000239s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:37'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:37'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:42+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000358s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002259s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001622s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001527s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:42'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:42'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:47+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002255s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001595s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:47'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:47'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:52+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002264s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001671s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:52'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:52'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:44:57+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002266s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001649s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000247s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001581s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:57'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:14:57'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:02+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000348s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002241s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001628s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:02'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:02'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:07+08:00 ] 14.24.64.47 POST /api/User/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002306s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.001532s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user_payment` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SELECT SUM(price) AS tp_sum FROM `zp_user_exclusive_pig` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_doge_money` [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT SUM(contract_revenue) AS tp_sum FROM `zp_pig_doge_money` WHERE  `user_id` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT SUM(user_money) AS tp_sum FROM `zp_account_log` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_level` [ RunTime:0.001501s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `zp_user_level` WHERE  `level_id` = 2 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` INNER JOIN `zp_users` `c` ON `a`.`purchase_user_id`=`c`.`user_id` WHERE  `sell_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:08+08:00 ] 14.24.64.47 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002522s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:08+08:00 ] 14.24.64.47 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:08+08:00 ] 14.24.64.47 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002469s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001899s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:08+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000252s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001501s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001804s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001471s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:08'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:08'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000323s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:08+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002212s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001520s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001498s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:08'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:08'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:13+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002283s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001622s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:18+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002242s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001567s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001503s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:18'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:18'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:23+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002119s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001783s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000244s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001843s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:23'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:23'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:28+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000349s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.003144s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001559s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:28'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:28'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:33+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002258s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001604s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:33'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:33'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:38+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002309s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001618s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:38'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:38'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:43+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002298s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001606s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:43'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:43'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:49+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002286s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002267s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001868s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:49'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:49'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:53+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000351s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002228s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001667s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001585s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:53'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:53'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:45:58+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002242s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001595s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:58'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:15:58'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:03+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002299s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001585s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001537s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:16:03'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:16:03'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000306s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:08+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000387s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002290s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001640s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001572s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:16:08'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:16:08'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:13+08:00 ] 14.24.64.47 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002341s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001614s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000233s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001557s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:16:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:16:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:18+08:00 ] 14.24.64.47 POST /api/User/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002236s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.001561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_user_payment` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001505s ]
+[ sql ] [ SQL ] SELECT SUM(price) AS tp_sum FROM `zp_user_exclusive_pig` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_doge_money` [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT SUM(contract_revenue) AS tp_sum FROM `zp_pig_doge_money` WHERE  `user_id` = 1  AND `type` = 3 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT SUM(user_money) AS tp_sum FROM `zp_account_log` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_level` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `zp_user_level` WHERE  `level_id` = 2 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` INNER JOIN `zp_users` `c` ON `a`.`purchase_user_id`=`c`.`user_id` WHERE  `sell_user_id` = 1  AND `pay_status` = 1 LIMIT 1 [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:19+08:00 ] 14.24.64.47 GET /api/business/adopt_log
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000356s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002266s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`goods_name`,`b`.`small_price`,`b`.`large_price`,`b`.`contract_days`,`b`.`income_ratio` FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 ORDER BY establish_time desc [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`goods_name`,`b`.`small_price`,`b`.`large_price`,`b`.`contract_days`,`b`.`income_ratio`,`c`.`pig_order_sn`,`c`.`order_id`,`c`.`sell_user_id`,`c`.`pay_status` FROM `zp_user_exclusive_pig` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_id`=`b`.`id` INNER JOIN `zp_pig_order` `c` ON `a`.`order_id`=`c`.`order_id` WHERE  `a`.`user_id` = 1  AND `a`.`is_able_sale` = 0 ORDER BY a.buy_time desc [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig_del` [ RunTime:0.001643s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`goods_name`,`b`.`small_price`,`b`.`large_price`,`b`.`contract_days`,`b`.`income_ratio`,`c`.`pig_order_sn`,`c`.`order_id`,`c`.`sell_user_id`,`c`.`pay_status` FROM `zp_user_exclusive_pig_del` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_id`=`b`.`id` INNER JOIN `zp_pig_order` `c` ON `a`.`order_id`=`c`.`order_id` WHERE  `a`.`user_id` = 1  AND `a`.`type` = 'del' ORDER BY a.buy_time desc [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`remark` FROM `zp_pig_order` `a` INNER JOIN `zp_pig_appeal` `c` ON `a`.`order_id`=`c`.`order_id` WHERE  `a`.`pay_status` = 0  AND `a`.`purchase_user_id` = 1 ORDER BY a.appeal_time desc [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:22+08:00 ] 14.24.64.47 GET /api/business/adopt_log
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002234s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`goods_name`,`b`.`small_price`,`b`.`large_price`,`b`.`contract_days`,`b`.`income_ratio` FROM `zp_pig_order` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_level`=`b`.`id` WHERE  `purchase_user_id` = 1  AND `pay_status` = 1 ORDER BY establish_time desc [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.001577s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`goods_name`,`b`.`small_price`,`b`.`large_price`,`b`.`contract_days`,`b`.`income_ratio`,`c`.`pig_order_sn`,`c`.`order_id`,`c`.`sell_user_id`,`c`.`pay_status` FROM `zp_user_exclusive_pig` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_id`=`b`.`id` INNER JOIN `zp_pig_order` `c` ON `a`.`order_id`=`c`.`order_id` WHERE  `a`.`user_id` = 1  AND `a`.`is_able_sale` = 0 ORDER BY a.buy_time desc [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig_del` [ RunTime:0.001462s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`goods_name`,`b`.`small_price`,`b`.`large_price`,`b`.`contract_days`,`b`.`income_ratio`,`c`.`pig_order_sn`,`c`.`order_id`,`c`.`sell_user_id`,`c`.`pay_status` FROM `zp_user_exclusive_pig_del` `a` INNER JOIN `zp_pig_goods` `b` ON `a`.`pig_id`=`b`.`id` INNER JOIN `zp_pig_order` `c` ON `a`.`order_id`=`c`.`order_id` WHERE  `a`.`user_id` = 1  AND `a`.`type` = 'del' ORDER BY a.buy_time desc [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`remark` FROM `zp_pig_order` `a` INNER JOIN `zp_pig_appeal` `c` ON `a`.`order_id`=`c`.`order_id` WHERE  `a`.`pay_status` = 0  AND `a`.`purchase_user_id` = 1 ORDER BY a.appeal_time desc [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:31+08:00 ] 14.24.64.47 POST /api/business/order_detail
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002221s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.nickname as buyer,b.user_id as buyer_id,b.mobile as buyer_mobile,c.user_id as seller_id,c.nickname as seller,c.mobile as seller_mobile FROM `zp_pig_order` `a` INNER JOIN `zp_users` `b` ON `a`.`purchase_user_id`=`b`.`user_id` INNER JOIN `zp_users` `c` ON `a`.`sell_user_id`=`c`.`user_id` WHERE  (  a.order_id = 116 ) LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.001522s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user_payment` WHERE  `user_id` = 12 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT `id`,`account`,`name`,`qrcode_url`,`paysalt`,`user_id` FROM `zp_user_payment` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000247s ]
+---------------------------------------------------------------
+[ 2019-05-07T20:46:37+08:00 ] 14.24.64.47 POST /api/business/order_detail
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002297s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_order` [ RunTime:0.001603s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.nickname as buyer,b.user_id as buyer_id,b.mobile as buyer_mobile,c.user_id as seller_id,c.nickname as seller,c.mobile as seller_mobile FROM `zp_pig_order` `a` INNER JOIN `zp_users` `b` ON `a`.`purchase_user_id`=`b`.`user_id` INNER JOIN `zp_users` `c` ON `a`.`sell_user_id`=`c`.`user_id` WHERE  (  a.order_id = 116 ) LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_payment` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_user_payment` WHERE  `user_id` = 12 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT `id`,`account`,`name`,`qrcode_url`,`paysalt`,`user_id` FROM `zp_user_payment` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:12+08:00 ] 211.162.238.7 POST /api/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002237s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `mobile` = '13800000000'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:13+08:00 ] 211.162.238.7 GET /api/Login/getannouncement
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_article` [ RunTime:0.002468s ]
+[ sql ] [ SQL ] SELECT `content`,`title` FROM `zp_article` WHERE  `id` = 129 LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:13+08:00 ] 211.162.238.7 GET /api/Game/isYuyueData
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001693s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_account_log` [ RunTime:0.001461s ]
+[ sql ] [ SQL ] SELECT `pig_id` FROM `zp_account_log` WHERE  `change_time` BETWEEN 1557158400 AND 1557244800  AND `user_id` = 1  AND `type` = 4 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:13+08:00 ] 211.162.238.7 GET /api/nologin/pig_goods
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.002087s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000232s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001834s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `is_display` = 1 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:13+08:00 ] 211.162.238.7 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000241s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002064s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001478s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000235s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:13+08:00 ] 211.162.238.7 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000366s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001609s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001510s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:13+08:00 ] 211.162.238.7 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.001863s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001559s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001560s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:13'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:18+08:00 ] 211.162.238.7 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000363s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002302s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001634s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:18'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:18'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2019-05-07T21:10:23+08:00 ] 211.162.238.7 GET /api/game/checkGame
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_users` [ RunTime:0.002297s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_users` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_config` [ RunTime:0.001623s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ sql ] [ SQL ] SELECT `value` FROM `zp_config` WHERE  `name` = 'daojishi' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001531s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:23'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `zp_pig_goods` WHERE  `start_time` > '20:40:23'  AND `today_is_open` = 0  AND `is_display` = 1 ORDER BY `start_time` LIMIT 1 [ RunTime:0.000304s ]

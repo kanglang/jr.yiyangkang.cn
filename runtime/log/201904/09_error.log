@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+[ 2019-04-09T19:56:19+08:00 ] 112.94.224.188 GET /api/Login/getannouncement
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-04-09T19:56:19+08:00 ] 112.94.224.188 GET /api/nologin/pig_goods
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-04-09T19:56:47+08:00 ] 180.163.220.4 GET /api/Login/getannouncement
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-04-09T19:56:48+08:00 ] 180.163.220.66 GET /api/nologin/pig_goods
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-04-09T19:57:11+08:00 ] 42.236.10.114 GET /api/Login/getannouncement
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2019-04-09T19:57:15+08:00 ] 42.236.10.114 GET /api/nologin/pig_goods
+[ error ] SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'qukuailian_zouze'@'localhost' (using password: YES)[/www/wwwroot/pig.77cco.com/thinkphp/library/think/db/Connection.php:293]

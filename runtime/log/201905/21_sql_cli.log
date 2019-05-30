@@ -1,0 +1,5 @@
+[ 2019-05-21T00:00:01+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;port=3306;dbname=pig_db;charset=utf8
+[ 2019-05-21T00:00:01+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `zp_user_exclusive_pig` [ RunTime:0.002135s ]
+[ 2019-05-21T00:00:01+08:00 ][ sql ] [ SQL ] SELECT * FROM `zp_user_exclusive_pig` WHERE  `is_able_sale` = 1 [ RunTime:0.000369s ]
+[ 2019-05-21T00:00:01+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `zp_pig_goods` [ RunTime:0.001669s ]
+[ 2019-05-21T00:00:01+08:00 ][ sql ] [ SQL ] SELECT `start_time` FROM `zp_pig_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000241s ]

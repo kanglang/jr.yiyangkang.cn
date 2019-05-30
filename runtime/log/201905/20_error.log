@@ -1,0 +1,76 @@
+---------------------------------------------------------------
+[ 2019-05-20T19:46:57+08:00 ] 59.42.239.199 GET /admin/config/index
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/pig.77cco.com/application/common.php:108]
+---------------------------------------------------------------
+[ 2019-05-20T19:50:20+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T19:50:34+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T19:50:39+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T19:50:57+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T19:50:59+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:05:57+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:05:59+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:00+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:02+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:05+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:06+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:08+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:09+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:10+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:06:12+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:08:32+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:08:44+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:08:52+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:10:43+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:10:52+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:11:02+08:00 ] 59.42.239.199 GET /shop/Pig/pigList
+[ error ] [8]未定义变量: list[/www/wwwroot/pig.77cco.com/runtime/temp/2b6b7485a0a6e3b7e1df5395121fd8a9.php:287]
+---------------------------------------------------------------
+[ 2019-05-20T21:12:59+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]
+---------------------------------------------------------------
+[ 2019-05-20T21:13:29+08:00 ] 59.42.239.199 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/www/wwwroot/pig.77cco.com/application/mall_function.php:640]

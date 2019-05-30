@@ -1,0 +1,455 @@
+diff --git a/application/shop/controller/Pig.php b/application/shop/controller/Pig.php
+index a2ac93e..64bccd3 100644
+--- a/application/shop/controller/Pig.php
++++ b/application/shop/controller/Pig.php
+@@ -203,6 +203,7 @@ class Pig extends Base {
+         $condition = array();
+ 
+         I('mobile') ? $condition['t2.mobile']  =   I('mobile') : false;  //出售人
++        I('id') ? $condition['t2.user_id']  =   I('id') : false;  //出售人
+         I('pig_level') ? $condition['t3.id']  =   I('pig_level') : false;  //鱼等级
+ 
+         // I('email') ? $condition['email'] = I('email') : false;
+@@ -318,6 +319,7 @@ class Pig extends Base {
+         $condition = array();
+ 
+         I('mobile') ? $condition['t2.mobile']  =   I('mobile') : false;                   //出售人
++        I('id') ? $condition['t2.user_id']  =   I('id') : false;                   //出售人
+         I('pig_order_sn') ? $condition['t1.pig_order_sn'] = I('pig_order_sn') : false;    //订单编号
+         I('pig_level') ? $condition['t3.id']  =   I('pig_level') : false;          //鱼等级
+          (I('pay_status') !== '') && $condition['t1.pay_status']  =   I('pay_status') ;   //订单状态
+@@ -471,6 +473,7 @@ class Pig extends Base {
+         $condition = array();
+ 
+         I('mobile') ? $condition['t2.mobile']  =   I('mobile') : false;  //出售人
++         I('id') ? $condition['t2.user_id']  =   I('id') : false;  //出售人id
+         I('pig_level') ? $condition['t3.id']  =   I('pig_level') : false;  //鱼等级
+         // I('is_able_sale') ? $condition['t1.is_able_sale']  =   I('is_able_sale') : false;  //鱼等级
+ 
+diff --git a/application/shop/controller/User.php b/application/shop/controller/User.php
+index 5213d30..bd06437 100644
+--- a/application/shop/controller/User.php
++++ b/application/shop/controller/User.php
+@@ -52,6 +52,16 @@ class User extends Base {
+ 
+         $userList = $model->where($condition)->order($sort_order)->limit($Page->firstRow.','.$Page->listRows)->select();
+ 
++        //$users['price']    = db('user_exclusive_pig')->where('user_id', $user_id)->sum('price');//总资产
++        //$users['contract_revenue']   = db('pig_doge_money')->where(['user_id'=>$user_id,'type'=>3])->sum('contract_revenue');//合约收益
++         
++        //增加总资产和合约收益
++        foreach ($userList as  &$val) {
++            $val['allprice']    = db('user_exclusive_pig')->where('user_id', $val["user_id"])->sum('price');//总资产
++            $val['contract_revenue']   = db('pig_doge_money')->where(['user_id'=>$val["user_id"],'type'=>3])->sum('contract_revenue');//合约收益
++         } 
++
++
+         $user_id_arr = get_arr_column($userList, 'user_id');
+         $first_leader = $second_leader = $third_leader = 0;
+         if(!empty($user_id_arr))
+@@ -174,6 +184,41 @@ class User extends Base {
+         return $this->fetch();
+     }
+ 
++    //银行卡信息查看 
++    public function bankdetail(){  
++        $uid = I('get.id');
++        //user_payment
++        $bank_card = D('user_payment')->where(array('user_id'=>$uid,'type'=>3))->find();
++        $alipay = D('user_payment')->where(array('user_id'=>$uid,'type'=>1))->find();
++        $weixin = D('user_payment')->where(array('user_id'=>$uid,'type'=>2))->find();
++       
++        if($bank_card){
++           $bank_card= $bank_card;
++        }else{
++            $bank_card=array();
++        }
++
++        if($alipay){
++           $alipay= $alipay;
++        }else{
++            $alipay=array();
++        }
++
++       if($weixin){
++           $weixin= $weixin;
++        }else{
++           $weixin=array();
++        }
++     
++
++        $this->assign('bank_card',$bank_card);
++        $this->assign('alipay',$alipay);
++        $this->assign('weixin',$weixin);
++    
++        return $this->fetch();
++   
++    }
++
+     public function add_user(){
+     	if(IS_POST){
+     		$data = I('post.');
+@@ -1210,7 +1255,7 @@ exit("功能正在开发中。。。");
+         /**
+      * 审核身份列表
+      */
+-    public function identity()
++/*    public function identity()
+     {
+         $map = [];
+         $user_id = input("user_id");
+@@ -1223,6 +1268,32 @@ exit("功能正在开发中。。。");
+         $this->assign("lists",$lists);
+         $this->assign("page", $lists->render());
+         return $this->fetch();
++    }*/
++
++    public function identity()
++    {
++        $map = [];
++        $user_id = input("user_id");
++        if (!empty($user_id)) {
++            $map['t1.user_id'] = $user_id;
++        }
++        $mobile = input("mobile");
++        if (!empty($mobile)) {
++            $map['t2.mobile'] = $mobile;
++        }
++    
++
++
++        $pagesize = config('paginate')['list_rows'];//每页数量
++        $param=request()->param(); //获取url参数
++        //$lists = db('user_identity')->where($map)->order('id desc')->paginate($pagesize,false,array('query' => array_splice($param,1)));
++        $lists = Db('user_identity as t1')
++                            ->field('t1.*')
++                            ->join('users t2','t1.user_id = t2.user_id','LEFT')
++                            ->where($map)->order('t1.id desc')->paginate($pagesize,false,array('query' => array_splice($param,1)));
++        $this->assign("lists",$lists);
++        $this->assign("page", $lists->render());
++        return $this->fetch();
+     }
+ 
+ 
+diff --git a/application/shop/view/pig/ajaxindex.html b/application/shop/view/pig/ajaxindex.html
+index 2f9e82d..c4f147b 100644
+--- a/application/shop/view/pig/ajaxindex.html
++++ b/application/shop/view/pig/ajaxindex.html
+@@ -48,7 +48,7 @@
+                                         <td class="text-center">{$list.pig_price}</td>
+                                         <td class="text-center">{$list.pig_id}</td>
+                                         <td class="text-center">{if $list.pay_status==0}冻结{elseif $list.pay_status == 1}<span style="color: blue">交易中</span>{elseif $list.pay_status == 2}<span style="color: red">交易完成</span>{/if}</td>
+-                                        <td class="text-center"><a href="{$list.img_url}">><img src="{$list.img_url}" style="height: 30px" onerror="this.src='/static/admin/images/no_img.jpg'"/></a></td>
++                                        <td class="text-center"><a href="{$list.img_url}"><img src="{$list.img_url}" style="height: 30px" onerror="this.src='/static/admin/images/no_img.jpg'"/></a></td>
+                                         <td class="text-center">{if $list.establish_time}{$list.establish_time|date='Y-m-d H:i',###}{else}{/if}</td>
+                                         <td class="text-center">{if $list.end_time}{$list.end_time|date='Y-m-d H:i',###}{else}{/if}</td>
+                                         <!-- <td class="text-center">
+diff --git a/application/shop/view/pig/pigLog.html b/application/shop/view/pig/pigLog.html
+index 60bf9af..36e2fb4 100644
+--- a/application/shop/view/pig/pigLog.html
++++ b/application/shop/view/pig/pigLog.html
+@@ -23,6 +23,12 @@
+                                         <input type="text" name="mobile" placeholder="出售人手机号" id="input-member-id" class="input-sm" style="width:150px;">
+                                     </div>
+                                 </div>
++                                  <div class="form-group">
++                                    <label class="control-label" for="input-order-id">出售人id</label>
++                                    <div class="input-group">
++                                        <input type="text" name="id" placeholder="出售人id" id="input-member-id" class="input-sm" style="width:150px;">
++                                    </div>
++                                </div>
+                                 <div class="form-group">
+                                     <select name="pig_level" class="input-sm" style="width:200px;">
+                                             <option value="">请选择鱼等级</option>
+diff --git a/application/shop/view/pig/pigOrder.html b/application/shop/view/pig/pigOrder.html
+index 30690e2..b722a38 100644
+--- a/application/shop/view/pig/pigOrder.html
++++ b/application/shop/view/pig/pigOrder.html
+@@ -26,6 +26,12 @@
+                                         <input type="text" name="mobile" placeholder="出售人手机号" id="input-member-id" class="input-sm" style="width:150px;">
+                                     </div>
+                                 </div>
++                                   <div class="form-group">
++                                    <label class="control-label" for="input-order-id">出售人id</label>
++                                    <div class="input-group">
++                                        <input type="text" name="id" placeholder="出售人id" id="input-member-id" class="input-sm" style="width:150px;">
++                                    </div>
++                                </div>
+                                 <div class="form-group">
+                                    <select name="pig_level" class="input-sm" style="width:150px;">
+                                             <option value="">请选择鱼等级</option>
+diff --git a/application/shop/view/pig/pigUser.html b/application/shop/view/pig/pigUser.html
+index 5471dae..dfe8075 100644
+--- a/application/shop/view/pig/pigUser.html
++++ b/application/shop/view/pig/pigUser.html
+@@ -23,6 +23,12 @@
+                                         <input type="text" name="mobile" placeholder="鱼的所属人手机号" id="input-member-id" class="input-sm" style="width:180px;">
+                                     </div>
+                                 </div>
++                               <div class="form-group">
++                                    <label class="control-label" for="input-order-id">所属人id</label>
++                                    <div class="input-group">
++                                        <input type="text" name="id" placeholder="所属人id" id="input-member-id" class="input-sm" style="width:180px;">
++                                    </div>
++                                </div>
+                                 <div class="form-group">
+                                    <select name="pig_level" class="input-sm" style="width:200px;">
+                                             <option value="">请选择鱼等级</option>
+diff --git a/application/shop/view/user/ajaxindex.html b/application/shop/view/user/ajaxindex.html
+index d09c6a1..43ce682 100644
+--- a/application/shop/view/user/ajaxindex.html
++++ b/application/shop/view/user/ajaxindex.html
+@@ -16,7 +16,10 @@
+                                         <a href="javascript:sort('level');">会员等级</a>
+                                     </td>
+                                     <td class="text-center">
+-                                        <a href="javascript:sort('total_amount');">累计消费</a>
++                                        总资产
++                                    </td>
++                                    <td class="text-center">
++                                        合约收益
+                                     </td>
+                                     <td class="text-center">
+                                         <a href="javascript:void(0);">一级下线数</a>
+@@ -51,6 +54,10 @@
+                                     <td class="text-center">
+                                         <a href="javascript:sort('is_lock');">冻结用户</a>
+                                     </td>
++                                     <td class="text-center">
++                                        银行卡信息
++                                    </td>
++
+                                     <td class="text-center">操作</td>
+                                 </tr>
+                                 </thead>
+@@ -64,7 +71,8 @@
+                                         <td class="text-center">{$list.user_id}</td>
+                                         <td class="text-center">{$list.nickname}</td>
+                                         <td class="text-center">{$level[$list['level']]}</td>
+-                                        <td class="text-center">{$list.total_amount}</td>
++                                        <td class="text-center">{$list.allprice}</td>
++                                        <td class="text-center">{$list.contract_revenue}</td>
+                                         <td class="text-center">{$first_leader[$list['user_id']]['count']|default="0"}</td>
+                                         <td class="text-center">{$second_leader[$list['user_id']]['count']|default="0"}</td>
+                                         <td class="text-center">{$third_leader[$list['user_id']]['count']|default="0"}</td>
+@@ -76,6 +84,7 @@
+                                         <td class="text-center">{$list.pig_currency}</td>
+                                         <td class="text-center">{$list.reg_time|date='Y-m-d H:i',###}</td>
+                                         <td class="text-center">{if $list.is_lock==1}<span style="color: blue">是</span>{else}<span style="color: red">否</span>{/if}</td>
++                                        <td class="text-center"><a href="{:U('shop/user/bankdetail',array('id'=>$list['user_id']))}" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="查看详情"><i class="fa fa-eye"></i></td>
+                                         <td class="text-center">
+                                             <a href="{:U('shop/user/detail',array('id'=>$list['user_id']))}" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="查看详情"><i class="fa fa-eye"></i></a>
+                                             <!-- <a href="{:U('shop/user/address',array('id'=>$list['user_id']))}" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="收货地址"><i class="fa fa-home"></i></a> -->
+diff --git a/application/shop/view/user/bankdetail.html b/application/shop/view/user/bankdetail.html
+new file mode 100644
+index 0000000..4fa2532
+--- /dev/null
++++ b/application/shop/view/user/bankdetail.html
+@@ -0,0 +1,156 @@
++{include file="public/header"/}
++<div class="wrapper wrapper-content animated fadeInRight">
++    <section class="content">
++    <!-- Main content -->
++    <!--<div class="container-fluid">-->
++    <div class="row">
++      <div class="col-sm-12">
++        <div class="ibox float-e-margins">
++            <div class="ibox-title">
++                <h3 class="panel-title"><i class="fa fa-list"></i> 银行卡信息</h3>
++            </div>
++            <div class="ibox-content">
++                <form action="" method="post" onsubmit="return checkUserUpdate(this);">
++                    <table class="table table-bordered">
++                    <tbody>
++                   <!--  <tr>
++                       <td class="col-sm-2">银行卡信息:</td>
++                       <td ></td>
++                       <td></td>
++                   </tr> -->
++                 <tr>
++                    <td>银行卡账号:</td>
++                    <td>{if $bank_card }{$bank_card.account} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr> 
++                <tr>
++                    <td>开户银行:</td>
++                    <td>{if $bank_card }{$bank_card.bank_name} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr>  
++                 <tr>
++                    <td>支行:</td>
++                    <td>{if $bank_card }{$bank_card.branch_name} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr>               
++                
++                    </tbody>
++                </table>
++                </form>
++
++            </div>
++        </div>
++ 	  </div> 
++    </div>    <!-- /.content -->
++   </section>
++
++    <div class="row">
++      <div class="col-sm-12">
++        <div class="ibox float-e-margins">
++            <div class="ibox-title">
++                <h3 class="panel-title"><i class="fa fa-list"></i> 微信收款信息</h3>
++            </div>
++            <div class="ibox-content">
++                <form action="" method="post" onsubmit="return checkUserUpdate(this);">
++                    <table class="table table-bordered">
++                    <tbody>
++                   <!--  <tr>
++                       <td class="col-sm-2">银行卡信息:</td>
++                       <td ></td>
++                       <td></td>
++                   </tr> -->
++                 <tr>
++                    <td>微信账号:</td>
++                    <td>{if $weixin }{$weixin.account} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr> 
++                <tr>
++                    <td>收款人:</td>
++                    <td>{if $weixin }{$weixin.name} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr>  
++                 <tr>
++                    <td>收款二维码:</td>
++                    <td>{if $weixin }<a href="{$weixin.qrcode_url}"><img src="{$weixin.qrcode_url}"  onerror="this.src='/static/admin/images/no_img.jpg'"/></a> {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr>               
++                
++                    </tbody>
++                </table>
++                </form>
++
++            </div>
++        </div>
++      </div> 
++    </div>    <!-- /.content -->
++
++ <div class="row">
++      <div class="col-sm-12">
++        <div class="ibox float-e-margins">
++            <div class="ibox-title">
++                <h3 class="panel-title"><i class="fa fa-list"></i> 支付宝收款信息</h3>
++            </div>
++            <div class="ibox-content">
++                <form action="" method="post" onsubmit="return checkUserUpdate(this);">
++                    <table class="table table-bordered">
++                    <tbody>
++                   <!--  <tr>
++                       <td class="col-sm-2">银行卡信息:</td>
++                       <td ></td>
++                       <td></td>
++                   </tr> -->
++                 <tr>
++                    <td>支付宝账号:</td>
++                    <td>{if $alipay }{$alipay.account} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr> 
++                <tr>
++                    <td>收款人:</td>
++                    <td>{if $alipay }{$alipay.name} {/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr>  
++                 <tr>
++                    <td>收款二维码:</td>
++                    <td>{if $alipay }<a href="{$alipay.qrcode_url}"><img src="{$alipay.qrcode_url}"  onerror="this.src='/static/admin/images/no_img.jpg'"/></a>{/if}<span style="margin-left:100px;"></span></td>
++                    <td></td>
++                </tr>               
++                
++                    </tbody>
++                </table>
++                </form>
++
++            </div>
++        </div>
++      </div> 
++    </div>    <!-- /.content -->
++   </section>
++</div>
++<script>
++    function checkUserUpdate(){
++        var mobile = $('input[name="mobile"]').val();
++        var password = $('input[name="password"]').val();
++        var password2 = $('input[name="password2"]').val();
++        var pwd = $('input[name="paypwd"]').val();
++        var pwd2 = $('input[name="paypwd2"]').val();
++
++        var error ='';
++        if(password != password2){
++            error += "两次密码不一样\n";
++        }
++        if(pwd != pwd2){
++            error += "两次二级密码不一样\n";
++        }
++        if(!checkMobile(mobile)){
++            error += "手机号码填写有误\n";
++        }
++        if(error){
++            layer.alert(error, {icon: 2});  //alert(error);
++            return false;
++        }
++        return true;
++
++    }
++</script>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/application/shop/view/user/identity.html b/application/shop/view/user/identity.html
+index e1e8095..df6b099 100644
+--- a/application/shop/view/user/identity.html
++++ b/application/shop/view/user/identity.html
+@@ -3,7 +3,7 @@
+     <div class="container-fluid">
+       <div class="ibox float-e-margins">
+         <div class="ibox-title">
+-          <h3 class="panel-title"><i class="fa fa-list"></i>申诉列表</h3>
++          <h3 class="panel-title"><i class="fa fa-list"></i>身份审核</h3>
+         </div>
+         <div class="ibox-content">    
+ 		<div class="navbar navbar-default">                    
+@@ -13,6 +13,10 @@
+                   <div class="input-group">
+                     <input type="text" class="form-control" id="user_id" placeholder="用户id" value="{$Request.param.user_id}" name="user_id" />
+                   </div>
++                    <label for="input-order-id" class="control-label">用户手机号码:</label>
++                  <div class="input-group">
++                    <input type="text" class="form-control" id="mobile" placeholder="用户手机号码" value="{$Request.param.mobile}" name="mobile" />
++                  </div>
+                 <div class="form-group">    
+                     <button class="btn btn-primary" id="button-filter search-order" type="submit"><i class="fa fa-search"></i> 筛选</button>    
+                 </div>                                 
+diff --git a/public/dist/pages/authentication.html b/public/dist/pages/authentication.html
+index 011540d..41aaac4 100644
+--- a/public/dist/pages/authentication.html
++++ b/public/dist/pages/authentication.html
+@@ -37,7 +37,7 @@
+             <div class="weui-cells weui-cells_form">
+               <div class="weui-cell">
+                 <div class="weui-cell__bd">
+-                  <input class="weui-input fs28 fw_b identity" type="number" placeholder="请输入您的身份证号"/>
++                  <input class="weui-input fs28 fw_b identity" type="text" placeholder="请输入您的身份证号"/>
+                 </div>
+               </div>
+             </div>
+diff --git a/public/dist/pages/blessings_transfer.html b/public/dist/pages/blessings_transfer.html
+index 26e7378..2ce7f03 100644
+--- a/public/dist/pages/blessings_transfer.html
++++ b/public/dist/pages/blessings_transfer.html
+@@ -79,7 +79,7 @@
+         
+         //密码框
+         layer.open({
+-          content: '<input class="weui-input fs28 fw_b password" type="password" placeholder="请输入交易密码"/>'
++          content: '<input  type="password" style="width:100%;height:50px;border:1px red;" placeholder="请输入交易密码"/>'
+           ,btn: ['确认', '取消']
+           ,yes: function(index){
+             var password = $('.password').val();

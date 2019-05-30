@@ -1,0 +1,3 @@
+---------------------------------------------------------------
+[ 2019-04-07T00:01:06+08:00 ] 113.70.102.198 POST /shop/Systems/login_task.html
+[ error ] [8]未定义数组索引: auto_confirm_date[/home/xgh/zouzebin/application/mall_function.php:640]
